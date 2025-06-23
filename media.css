@@ -1,0 +1,119 @@
+/* ----------- Responsive Styles ----------- */
+
+@media (max-width: 1024px) {
+  .main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about img {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+
+  .about-text {
+    width: 90%;
+  }
+
+  .title h2 {
+    font-size: 50px;
+  }
+
+  .box {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 20px 8%;
+  }
+
+  nav ul {
+    margin-top: 20px;
+  }
+
+  nav ul li {
+    padding: 8px 10px;
+  }
+
+  .content {
+    top: 55%;
+    transform: translateY(-55%);
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .about-text h2 {
+    font-size: 50px;
+  }
+
+  .about-text h5 {
+    font-size: 18px;
+  }
+
+  .service {
+    padding: 60px 0;
+  }
+
+  .title h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 28px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  .about img {
+    width: 250px;
+  }
+
+  .about-text h2 {
+    font-size: 36px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .card {
+    height: auto;
+    padding: 20px;
+  }
+
+  .pra p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .button {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+}

@@ -9,16 +9,29 @@
     height: 100vh;
     width: 100%;
     background-color: black;
-    background-image: url(background-img.jpg);
+    background-image: url(bg-image.jpg);
     background-size: cover;
     background-position: center;
 }
 
 nav {
-    display: flex;
+     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 45px 8% 0 8%;
+    padding: 5px 8% 5px 8%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    margin: 0px 50px 0 50px;
+    position: relative;
+    top: 50px;
+    border-radius: 30px;
+    border: 1px solid rgb(92 89 89 / 98%);
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -135,22 +148,34 @@ h4 {
 .title h2 {
     color: white;
     font-size: 75px;
-    width: 1130px;
+    width: 100%;
+    /* Changed from 1130px */
+    max-width: 1130px;
+    /* Optional: to limit on big screens */
     margin: 30px auto;
     text-align: center;
+    padding: 0 10px;
+    /* Prevent content from touching edges on mobile */
 }
 
 .box {
     display: flex;
-    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
     justify-content: center;
     align-items: center;
-    min-height: 400px;
+    gap: 20px;
+    /* Add spacing between cards */
+    padding: 20px;
 }
 
 .card {
-    height: 365px;
-    width: 355px;
+    height: auto;
+    /* Let height grow naturally */
+    width: 100%;
+    /* Full width by default */
+    max-width: 355px;
+    /* Max width on big screens */
     padding: 20px 35px;
     background: #191919;
     border-radius: 20px;
@@ -158,6 +183,7 @@ h4 {
     position: relative;
     overflow: hidden;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .card i {
@@ -177,8 +203,8 @@ h5 {
 .pra p {
     color: #fcfc;
     font-size: 16px;
-    line-height: 27px;  
-    margin-bottom: 25px;  
+    line-height: 27px;
+    margin-bottom: 25px;
 }
 
 .button {
